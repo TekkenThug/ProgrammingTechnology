@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14D9EADA-3765-4853-A205-BD8938DA2F1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Theory</RootNamespace>
+    <AssemblyName>Theory</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DLLProject1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLLProject1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR1\LR1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR1\LR1.Designer.cs">
+      <DependentUpon>LR1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR1\LR1_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR1\LR1_Password.Designer.cs">
+      <DependentUpon>LR1_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR1\LR1_Title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR1\LR1_Title.Designer.cs">
+      <DependentUpon>LR1_Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR2\LR2_Title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR2\LR2_Title.Designer.cs">
+      <DependentUpon>LR2_Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR3\LR3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR3\LR3.Designer.cs">
+      <DependentUpon>LR3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4.Designer.cs">
+      <DependentUpon>LR4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_1.Designer.cs">
+      <DependentUpon>LR4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_10.Designer.cs">
+      <DependentUpon>LR4_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_11.Designer.cs">
+      <DependentUpon>LR4_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_12.Designer.cs">
+      <DependentUpon>LR4_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_13.Designer.cs">
+      <DependentUpon>LR4_13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_14.Designer.cs">
+      <DependentUpon>LR4_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_15.Designer.cs">
+      <DependentUpon>LR4_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_16.Designer.cs">
+      <DependentUpon>LR4_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_2.Designer.cs">
+      <DependentUpon>LR4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_3.Designer.cs">
+      <DependentUpon>LR4_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_4.Designer.cs">
+      <DependentUpon>LR4_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_5.Designer.cs">
+      <DependentUpon>LR4_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_6.Designer.cs">
+      <DependentUpon>LR4_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_7.Designer.cs">
+      <DependentUpon>LR4_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_8.Designer.cs">
+      <DependentUpon>LR4_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_9.Designer.cs">
+      <DependentUpon>LR4_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing programm\LR4_Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing programm\LR4_Result.Designer.cs">
+      <DependentUpon>LR4_Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR5\LR5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR5\LR5.Designer.cs">
+      <DependentUpon>LR5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR6\LR6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR6\LR6.Designer.cs">
+      <DependentUpon>LR6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR1\LR1.resx">
+      <DependentUpon>LR1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR1\LR1_Password.resx">
+      <DependentUpon>LR1_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR1\LR1_Title.resx">
+      <DependentUpon>LR1_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR2\LR2_Title.resx">
+      <DependentUpon>LR2_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR3\LR3.resx">
+      <DependentUpon>LR3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4.resx">
+      <DependentUpon>LR4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_1.resx">
+      <DependentUpon>LR4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_10.resx">
+      <DependentUpon>LR4_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_11.resx">
+      <DependentUpon>LR4_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_12.resx">
+      <DependentUpon>LR4_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_13.resx">
+      <DependentUpon>LR4_13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_14.resx">
+      <DependentUpon>LR4_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_15.resx">
+      <DependentUpon>LR4_15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_16.resx">
+      <DependentUpon>LR4_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_2.resx">
+      <DependentUpon>LR4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_3.resx">
+      <DependentUpon>LR4_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_4.resx">
+      <DependentUpon>LR4_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_5.resx">
+      <DependentUpon>LR4_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_6.resx">
+      <DependentUpon>LR4_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR5\LR5.resx">
+      <DependentUpon>LR5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR6\LR6.resx">
+      <DependentUpon>LR6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Testing programm\LR4_7.resx">
+      <DependentUpon>LR4_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_8.resx">
+      <DependentUpon>LR4_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_9.resx">
+      <DependentUpon>LR4_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing programm\LR4_Result.resx">
+      <DependentUpon>LR4_Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{745de7bd-16bc-4fd0-afdf-fe9cdb0af3ef}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
+    <ProjectReference Include="Massiv\Massiv.csproj">
+      <Project>{18e81c51-8ec5-46ce-ac7f-940684051df0}</Project>
+      <Name>Massiv</Name>
+    </ProjectReference>
+    <ProjectReference Include="Test\Test.csproj">
+      <Project>{234d1e61-05c3-4a48-9cb8-d94375e14a51}</Project>
+      <Name>Test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\test-images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\test-images\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\test-images\card-scheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\test-images\card-scheme-2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
